@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Public Complaint Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zm0 7.8L4.6 7 12 3.8 19.4 7 12 9.8zM4 10.4v6.6C4 20 7 22 12 22s8-2 8-5V10.4l-8 4-8-4z"/>
+        </svg>
+        <span>Public Complaint Portal</span>
+      </a>
+
+      <nav class="nav">
+        <a href="user-login.html">User Login</a>
+        <a href="admin-login.html">Admin Login</a>
+        <a href="submit-complaint.html" class="btn small primary">Submit Complaint</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Make your voice heard — quickly and securely</h1>
+          <p class="lead">Submit complaints, track progress, and get updates. Simple, transparent and accountable.</p>
+          <div class="hero-actions">
+            <a class="btn large primary" href="submit-complaint.html">Submit a Complaint</a>
+            <a class="btn large ghost" href="complaint-details.html">View Complaint Status</a>
+          </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <svg width="420" height="260" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#6C63FF" />
+                <stop offset="1" stop-color="#00C2D1" />
+              </linearGradient>
+            </defs>
+            <rect x="10" y="20" width="400" height="220" rx="16" fill="url(#g)" opacity="0.12"/>
+            <g fill="#6C63FF" opacity="0.9">
+              <circle cx="90" cy="110" r="26"/>
+              <rect x="140" y="90" width="170" height="40" rx="8"/>
+              <rect x="140" y="140" width="110" height="14" rx="6"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>Quick actions</h2>
+      <p class="muted">Choose what you want to do</p>
+      <div class="grid">
+        <a class="card" href="submit-complaint.html">
+          <div class="icon">📣</div>
+          <h3>Submit Complaint</h3>
+          <p>Create a new complaint with attachments and priority.</p>
+        </a>
+
+        <a class="card" href="user-login.html">
+          <div class="icon">🔐</div>
+          <h3>User Login</h3>
+          <p>Sign in to track your complaints and receive updates.</p>
+        </a>
+
+        <a class="card" href="complaint-details.html">
+          <div class="icon">📝</div>
+          <h3>Track Status</h3>
+          <p>View progress, responses and timeline for each complaint.</p>
+        </a>
+
+        <a class="card" href="admin-login.html">
+          <div class="icon">⚙️</div>
+          <h3>Admin Portal</h3>
+          <p>Admin tools to manage complaints, users and reports.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="stats container">
+      <div class="stat">
+        <h3>1,254</h3>
+        <p>Resolved</p>
+      </div>
+      <div class="stat">
+        <h3>3,890</h3>
+        <p>Submitted</p>
+      </div>
+      <div class="stat">
+        <h3>98%</h3>
+        <p>Satisfaction</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Public Complaint Portal</strong>
+        <p class="muted">Transparency · Accountability · Service</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

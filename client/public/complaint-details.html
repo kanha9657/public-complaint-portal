@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Complaint Status — Public Complaint Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zm0 7.8L4.6 7 12 3.8 19.4 7 12 9.8zM4 10.4v6.6C4 20 7 22 12 22s8-2 8-5V10.4l-8 4-8-4z"/>
+        </svg>
+        <span>Public Complaint Portal</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="submit-complaint.html">Submit</a>
+        <a href="user-login.html">User</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:36px; padding-bottom:48px; max-width:900px;">
+    <div class="card" style="padding:20px;">
+      <h2 style="margin-top:0">Track Complaint</h2>
+      <p class="muted">Enter your complaint ID or email to view status and timeline.</p>
+
+      <form id="trackForm" style="margin-top:14px;display:flex;gap:12px;">
+        <input type="text" name="query" placeholder="Complaint ID or email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit" required />
+        <button class="btn primary" type="submit">Search</button>
+      </form>
+
+      <div id="result" style="margin-top:18px;"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Public Complaint Portal</strong>
+        <p class="muted">Transparency · Accountability · Service</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('trackForm')?.addEventListener('submit', e => {
+      e.preventDefault();
+      const q = new FormData(e.target).get('query');
+      // client stub: fetch status from API in real app
+      document.getElementById('result').innerHTML = '<div class="card" style="padding:14px;margin-top:10px;"><strong>Result for:</strong> '+String(q) +'<p class="muted" style="margin-top:8px">No backend connected — implement API to load real status.</p></div>';
+    });
+  </script>
+</body>
+</html>
