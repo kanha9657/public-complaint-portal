@@ -1,6 +1,4 @@
-# Public Complaint Portal
 
-## Overview
 The Public Complaint Portal is a web application designed to allow users to submit complaints and for administrators to manage those complaints. The application consists of a client-side interface built with HTML, CSS, and JavaScript, and a server-side application using Node.js and Express, with a MySQL database for data storage.
 
 ## Features
