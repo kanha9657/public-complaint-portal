@@ -105,10 +105,3 @@ public-complaint-portal
   ```
   cd client
   npm start
-  ```
-
-### Docker
-To run the application using Docker, use the following command:
-```
-docker-compose up
-```
